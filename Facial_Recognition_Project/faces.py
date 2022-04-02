@@ -31,7 +31,7 @@ while (True):
 
         # Recognizer
         id_, conf = recognizer.predict(roi_gray)
-        if conf >= 90:
+        if conf >= 40:
             #print(id_)
             print(labels[id_])
             font = cv2.FONT_HERSHEY_SIMPLEX
